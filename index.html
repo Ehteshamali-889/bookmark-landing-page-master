@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Bookmark landing page</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <img src="./images/logo-bookmark.svg" alt="logo" />
+    <nav>
+      <ul class="menu">
+        <li>Features</li>
+        <li>Pricing</li>
+        <li>Contact</li>
+        <li class="lastli"><button class="loginbtn">Login</button></li>
+      </ul>
+
+      <img src="./images/icon-hamburger.svg" alt="menu" class="hamburger" />
+      
+      
+    </nav>
+  </header>
+
+  <section class="manager">
+    <section>
+      <h1 class="simpleheading">A Simple Bookmark Manager</h1>
+      <p class="simplepara">A clean and simple interface to organize your favourite websites. Open a new 
+        browser tab and see your sites load instantly. Try it for free.</p>
+      <section class="btngroup">
+        <button class="chromebtn">Get it on Chrome</button>
+        <button class="firefoxbtn">Get it on Firefox</button>
+      </section>
+    </section>
+
+    <section>
+      <img src="./images/illustration-hero.svg" class="illustration" >
+    </section>
+
+    <section class="bgright">
+
+    </section>
+    
+  </section>
+
+  
+
+  <section>
+    <section class="feature">
+      <h1 class="headingfeature">Features</h1>
+      <p class="featurepara">Our aim is to make it quick and easy for you to access your favourite websites. 
+      Your bookmarks sync between your devices so you can access them on the go.</p>
+    </section>
+
+    <section class="subfeatures">
+      <button class="btnsub active" id="firstbtn" onclick="display(1)">Simple Bookmarking</button>
+      <button class="btnsub" id="secondbtn" onclick="display(2)">Speedy Searching</button>
+      <button class="btnsub" id="thirdbtn" onclick="display(3)">Easy Sharing</button>
+    </section>
+
+
+    <section class="mobilesubfeature">
+      <button class="btnsub" id="firstbtn" onclick="display(1)"><span class="active" id="firstspan">Simple Bookmarking</span></button>
+      <button class="btnsub" id="secondbtn" onclick="display(2)"><span id="secondspan">Speedy Searching</span></button>
+      <button class="btnsub" id="thirdbtn" onclick="display(3)"><span id="thirdspan">Easy Sharing</span></button>
+    </section>
+    
+
+    <section class="sub1" id="first">
+      <img src="./images/illustration-features-tab-1.svg" class="subillustration" >
+      <section>
+        <h1 class="bookheading">Bookmark in one click</h1>
+        <p class="bookpara">Organize your bookmarks however you like. Our simple drag-and-drop interface 
+          gives you complete control over how you manage your favourite sites.</p>
+        <button class="morebtn" >More Info</button>
+      </section>
+      <section class="bgleft">
+
+      </section>
+    </section>
+
+
+    <section class="sub1" id="second">
+      <img src="./images/illustration-features-tab-2.svg" class="subillustration">
+      <section>
+        <h1 class="bookheading">Intelligent search</h1>
+        <p class="bookpara">Our powerful search feature will help you find saved sites in no time at all. 
+          No need to trawl through all of your bookmarks.</p>
+        <button class="morebtn" >More Info</button>
+      </section>
+      <section class="bgleft">
+
+      </section>
+    </section>
+
+    <section class="sub1" id="third">
+      <img src="./images/illustration-features-tab-3.svg" class="subillustration" >
+      <section>
+        <h1 class="bookheading">Share your bookmarks</h1>
+        <p class="bookpara">Easily share your bookmarks and collections with others. Create a shareable 
+          link that you can send at the click of a button.</p>
+        <button class="morebtn" >More Info</button>
+      </section>
+      <section class="bgleft">
+
+      </section>
+    </section>
+    
+
+  </section>
+
+  <section class="download">
+    <h1 class="downloadheading">Download the extension</h1>
+    <p class="downloadpara">We’ve got more browsers in the pipeline. Please do let us know if you’ve 
+      got a favourite you’d like us to prioritize.</p>
+  </section>
+
+  <section class="cardshub">
+    <section class="card">
+      <img src="./images/logo-chrome.svg" alt="">
+      <h1 class="cardheading">Add to Chrome</h1>
+      <p class="cardpara">Minimum version 62</p>
+      <section class="topborder">
+        <button class="btnextension">Add & Install Extension</button>
+      </section>
+      
+    </section>
+    <section class="card secondcard">
+      <img src="./images/logo-firefox.svg" alt="">
+      <h1 class="cardheading">Add to Firefox</h1>
+      <p class="cardpara">Minimum version 55</p>
+      <section class="topborder">
+        <button class="btnextension">Add & Install Extension</button>
+      </section>
+    </section>
+    <section class="card thirdcard">
+      <img src="./images/logo-opera.svg" alt="">
+      <h1 class="cardheading">Add to Opera</h1>
+      <p class="cardpara">Minimum version 46</p>
+      <section class="topborder">
+        <button class="btnextension">Add & Install Extension</button>
+      </section>
+    </section>
+  </section>
+
+  <section class="faq">
+    <h1 class="faqheading">Frequently Asked Questions</h1>
+    <p class="faqpara">Here are some of our FAQs. If you have any other questions you’d like 
+      answered please feel free to email us.</p>
+    <section class="faq1 redhead" id="firstfaq">
+      <p>What is Bookmark?</p>
+      <img src="./images/icon-arrow.svg" alt="arrow" class="arrow">
+    </section>
+    <section class="faq1 firstpara second">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+        justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
+    </section>
+    <section class="faq1 second redhead" id="secondfaq">
+      <p>How can I request a new browser?</p>
+      <img src="./images/icon-arrow.svg" alt="arrow">
+    </section>
+    <section class="faq1 secondpara second">
+      <p>Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+        Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
+        ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
+        Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+    </section>
+    <section class="faq1 second" id="thirdfaq">
+      <p>Is there a mobile app?</p>
+      <img src="./images/icon-arrow.svg" alt="arrow">
+    </section>
+    <section class="faq1 thirdpara third">
+      <p>Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
+        urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
+        sollicitudin ex et ultricies bibendum.</p>
+    </section>
+    <section class="faq1 second" id="fourthfaq">
+      <p>What about other Chromium browsers?</p>
+      <img src="./images/icon-arrow.svg" alt="arrow">
+    </section>
+    <section class="faq1 fourthpara fourth">
+      <p>Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
+        vitae neque eget nisl gravida pellentesque non ut velit.</p>
+    </section>
+    <section class="faqlastpart">
+      <button class="morebtn" >More Info</button>
+    </section>
+    
+  </section>
+
+  <section class="joined">
+    <h3 class="joinedheading">35,000+ already joined</h3>
+    <section class="headingsection">
+      <h1 class="stayheading">Stay up-to-date with what we’re doing</h1>
+    </section>
+    <section class="emailform">
+      <input type="text" placeholder="Enter your email address" class="emailfield">
+      <button class="contactus">Contact Us</button>
+    </section>
+  </section>
+
+  <footer>
+    <section class="firstfooter">
+      <section class="firstsubfooter">
+        <section class="subfooter">
+          <img src="./images/bookmark.png" alt="logo" class="footerlogo" />
+          <h1 class="footerheaing">Bookmark</h1>
+        </section>
+       
+        <nav>
+          <ul class="footermenu">
+            <li class="footermenuitem">Features</li>
+            <li class="footermenuitem">Pricing</li>
+            <li class="footermenuitem">Contact</li>
+          </ul>
+        </nav>
+      </section>
+      
+    </section>
+    <section class="secondfooter">
+      <img src="./images/icon-facebook.svg" alt="fb" />
+      <img src="./images/icon-twitter.svg" alt="twitter" />
+    </section>
+  </footer>
+
+  
+
+
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
